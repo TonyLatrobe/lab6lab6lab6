@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+spec:
+  securityContext:
+    runAsUser: 1000
+    runAsGroup: 1000
+    fsGroup: 1000
+
+  restartPolicy: Never
+
+  containers:
+    - name: deploy-container
+      image: localhost:32000/python-ci:lab
+      imagePullPolicy: Always
+      command: ["cat"]
+      tty: true
