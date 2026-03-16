@@ -8,7 +8,7 @@ spec:
 
   containers:
     - name: python
-      image: localhost:32000/python-ci:lab
+      image: registry:32000/python-ci:lab
       imagePullPolicy: Always
       command: ["cat"]
       tty: true

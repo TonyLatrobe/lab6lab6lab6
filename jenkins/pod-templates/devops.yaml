@@ -13,7 +13,7 @@ spec:
 
   containers:
     - name: ci
-      image: localhost:32000/python-ci:lab
+      image: registry:32000/python-ci:lab
       imagePullPolicy: IfNotPresent
 
       command:

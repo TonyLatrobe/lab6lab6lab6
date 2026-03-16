@@ -10,7 +10,7 @@ spec:
 
   containers:
     - name: deploy-container
-      image: localhost:32000/python-ci:lab
+      image: registry:32000/python-ci:lab
       imagePullPolicy: Always
       command: ["cat"]
       tty: true
